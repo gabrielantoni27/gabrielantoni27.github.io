@@ -1,0 +1,98 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e1e1e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #a259ff;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a:focus {
+  color: #a259ff;
+  text-shadow: 0 0 2px #a259ff;
+}
+
+.navbar-links.open {
+  animation: slideDown 0.3s ease-in-out forwards;
+  display: flex;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hire-me-button {
+  background-color: #a259ff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.hire-me-button:hover {
+  background-color: #8a3ffb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(162, 89, 255, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+

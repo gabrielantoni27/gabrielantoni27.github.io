@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* Resume Section */
+.resume {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.resume h1,
+.resume h2,
+.resume h3 {
+  color: #c084fc;
+  margin-bottom: 0.5rem;
+}
+
+.resume h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.resume h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #c084fc;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.resume h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.resume p,
+.resume span,
+.resume li {
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+.resume ul {
+  list-style: disc inside;
+  padding-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Resume Card */
+.resume-card {
+  background-color: #1a1c23;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(192, 132, 252, 0.2);
+}
+
+/* Full Width for Key Sections */
+.resume-card.full-width {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .resume-card.full-width {
+    grid-column: span 1;
+  }
+}
+
+/* Link Styles */
+a {
+  color: #c084fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Spacing */
+.resume span {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+  color: #a8a8a8;
+}
