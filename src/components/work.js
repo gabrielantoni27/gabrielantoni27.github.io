@@ -42,7 +42,7 @@ function Works() {
 {
   title: "ResuMaker",
   description: "An online Resume Portfolio Maker",
-  previewLink: "https://www.canva.com/design/DAGcYi3JRZY/V8MTsEeOTnlornEENiHyKA/edit?utm_content=DAGcYi3JRZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+  previewLink: "https://gabrielantoni27.github.io/resumaker",
   category: "Resume Website",
   image: page5Image,
   imageAlt: "Ignite Arena esports project preview"
