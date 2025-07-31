@@ -4,6 +4,7 @@ import page1Image from '../assets/page1.png';
 import page2Image from '../assets/page2.png';
 import page3Image from '../assets/page3.png';
 import page4Image from '../assets/page4.png';
+import page5Image from '../assets/page5.png';
 function Works() {
   const projects = [
     {
@@ -36,6 +37,14 @@ function Works() {
   previewLink: "https://www.canva.com/design/DAGcYi3JRZY/V8MTsEeOTnlornEENiHyKA/edit?utm_content=DAGcYi3JRZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
   category: "Esports Website",
   image: page4Image,
+  imageAlt: "Ignite Arena esports project preview"
+},
+{
+  title: "ResuMaker",
+  description: "An online Resume Portfolio Maker",
+  previewLink: "https://www.canva.com/design/DAGcYi3JRZY/V8MTsEeOTnlornEENiHyKA/edit?utm_content=DAGcYi3JRZY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+  category: "Resume Website",
+  image: page5Image,
   imageAlt: "Ignite Arena esports project preview"
 }
 
